@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="563.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <Button layoutX="43.0" layoutY="57.0" mnemonicParsing="false" onAction="#customerButtonOnAction" prefHeight="63.0" prefWidth="209.0" style="-fx-background-color: #7BDCB5;" text="Customer" textFill="#eee8e8" />
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="472.0" layoutY="18.0" prefHeight="38.0" prefWidth="131.0" text="HH:mm:ss" textAlignment="CENTER" textFill="#1e1a1a">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="43.0" layoutY="151.0" onAction="#itemsButtonOnAction" prefHeight="70.0" prefWidth="209.0" style="-fx-background-color: #808080;" text="Items" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="43.0" layoutY="458.0" onAction="#placeOrderButtonOnAction" prefHeight="70.0" prefWidth="274.0" style="-fx-background-color: #ff2130;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView blendMode="MULTIPLY" fitHeight="642.0" fitWidth="411.0" layoutX="259.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/14054.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="43.0" layoutY="357.0" onAction="#orderDetailButtonOnAction" prefHeight="70.0" prefWidth="209.0" style="-fx-background-color: #ABB8C3;" text="Orders" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="43.0" layoutY="247.0" onAction="#ordersBtnOnAction" prefHeight="70.0" prefWidth="209.0" style="-fx-background-color: #808080;" text="Order Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
